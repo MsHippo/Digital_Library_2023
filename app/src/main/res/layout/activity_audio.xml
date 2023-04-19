@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_purple2"
+    tools:context=".AudioActivity">
+    <TextView
+        android:id="@+id/tv_audio"
+        android:text="Audio Book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/open_sans_bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_title_audio"
+        android:text="title of book chapter"
+        android:layout_below="@+id/tv_audio"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/iv_book"
+        android:layout_width="300dp"
+        android:layout_height="450dp"
+        android:layout_below="@+id/tv_title_audio"
+        android:layout_centerInParent="true"
+        android:padding="10dp"
+        android:src="@drawable/return_of_sherlock_holmes" />
+
+    <Button
+        android:id="@+id/btn_forward"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/forward" />
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/btn_forward"
+        android:text="@string/pause" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_pause"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/btn_pause"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/btn_rewind"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_back"
+        android:layout_marginStart="18dp"
+        android:layout_toEndOf="@+id/btn_back"
+        android:text="@string/rewind" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_alignStart="@+id/tv_audio"
+        android:layout_alignEnd="@+id/tv_audio"
+        android:layout_above="@+id/btn_forward" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_small"
+        android:layout_above="@+id/seekBar"
+        android:layout_toStartOf="@+id/tv_title_audio" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/tv_small_2"
+        android:layout_above="@+id/seekBar"
+        android:layout_alignEnd="@+id/btn_rewind" />
+
+
+</RelativeLayout>

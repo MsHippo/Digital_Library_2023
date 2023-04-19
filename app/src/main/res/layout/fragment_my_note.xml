@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_purple2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MyNoteFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:padding="10dp"
+                android:text="My Note"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </FrameLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_wishing_list"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/button_home_shadow"
+            android:clickable="true"
+            android:elevation="50dp"
+            android:outlineAmbientShadowColor="@color/red_500"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="8dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:src="@drawable/wish_list"/>
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/wishing_list"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/open_sans_regular"
+                android:textSize="18sp"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_next"/>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

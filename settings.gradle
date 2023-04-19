@@ -1,0 +1,2 @@
+rootProject.name = "Digital Library"
+include ':app'
